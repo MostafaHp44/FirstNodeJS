@@ -12,9 +12,9 @@ const server= http.createServer( (req, res)=> {
 })
 server.listen(3000,()=>{'server is running '});
 
-fs.writeFile('welcom.txt', 'Hello Node', (err,info)=> {
+fs.writeFile('welcom.txt', 'Hello Node', (err)=> {
     if (err) throw err;
-    console.log(info);
+    console.log('saved!');
   });
   fs.readFile('hello.txt','UTF-8', (err, data)=> {
 if (err) throw err
